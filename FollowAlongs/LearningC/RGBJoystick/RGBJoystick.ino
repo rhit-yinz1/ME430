@@ -1,22 +1,40 @@
-
+// C++ code
+//
 int rPot = 0;
 int bPot = 0;
-
 void setup()
 {
   Serial.begin(9600); //bits per second
   pinMode(9, OUTPUT);
   pinMode(10, OUTPUT);
   pinMode(11, OUTPUT);
+  
+  pinMode(2, INPUT_PULLUP);
 
 }
 
 void loop()
-{
-  red();
-  delay(1000);
-  off();
-  delay(1000);
+{  
+    rPot = analogRead(0);
+    Serial.print(" R=");  
+    Serial.print(rPot);
+    bPot = analogRead(1);
+    Serial.print(" B=");  
+    Serial.println(bPot);
+  
+  //digitalWrite(11, HIGH);
+  //red();
+  //delay(1000);
+  //green();
+  //delay(1000);
+  //blue();
+  //delay(1000);
+  
+  if (digitalRead(2)) {
+  	rgb(rPot/4, bPot/4, 0);
+  } else {
+    off();
+  }
 }
 
 void red(){
