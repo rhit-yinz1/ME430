@@ -9,7 +9,7 @@ Stepper myStepper(stepsPerRevolution, 7, 9, 8, 10);// order is important
 
 void setup() {
   // set the speed at 5 rpm:
-  myStepper.setSpeed(5);
+  myStepper.setSpeed(10);
   // initialize the serial port:
 }
  

@@ -2,5 +2,5 @@
     "configuration": "cpu=atmega2560",
     "board": "arduino:avr:mega",
     "port": "COM5",
-    "sketch": "Labs\\THM\\StepperLibrary\\StepperLibrary.ino"
+    "sketch": "Labs\\THM\\Servo\\Servo.ino"
 }
