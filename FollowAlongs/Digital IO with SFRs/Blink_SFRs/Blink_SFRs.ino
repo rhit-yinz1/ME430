@@ -1,11 +1,15 @@
-// Note: arduino pin 13 = ATmega328p (uno) PORTB5
+// Note: PIN 6 ON ARDUINO = ATmega2560 PH3
 //DDRB
 //PORTB
-#define REG_DDR_LED DDRD
-#define REG_PORT_LED PORTD
-#define REG_PIN_LED PIND
 
-#define BIT_LED 6
+// LED_BUILTIN IS PB7
+// #define REG_DDR_LED DDRB
+// #define REG_PORT_LED PORTB
+// #define BIT_LED 
+
+#define REG_DDR_LED DDRH
+#define REG_PORT_LED PORTH
+#define BIT_LED 3
 
 void setup() {
   //DDRB |= 0b00100000; //set pin 13 as output
