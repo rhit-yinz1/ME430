@@ -2,5 +2,5 @@
     "configuration": "cpu=atmega2560",
     "board": "arduino:avr:mega",
     "port": "COM5",
-    "sketch": "FollowAlongs\\Digital IO with SFRs\\Blink_SFRs\\Blink_SFRs.ino"
+    "sketch": "FollowAlongs\\Digital IO with SFRs\\TrafficLight_SFRs\\TrafficLight_SFRs.ino"
 }
