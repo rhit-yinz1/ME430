@@ -24,7 +24,13 @@
 
 
 volatile uint16_t isrCounter = 0;
-
+volatile uint8_t mainEventFlag = 0;
+#define PUSHBUTTON_FLAG 0x01
+#define PUSHBUTTON_FLAG2 0x02
+#define PUSHBUTTON_FLAG3 0x04
+#define PUSHBUTTON_FLAG4 0x08
+#define PUSHBUTTON_FLAG5 0x10
+#define PUSHBUTTON_FLAG6 0x20
 void setup()
 {
   Serial.begin(9600);
@@ -59,8 +65,17 @@ void loop()
     Serial.println(String("Counter = ") + isrCounter);
     delay(500);
   }
+  if(mainEventFlag & PUSHBUTTON_FLAG){
+    delay(30);
+    if(bit_is_clear(REG_PIN_PUSHBUTTON_COUNT, BIT_PUSHBUTTON_COUNT)){
+        isrCounter++;
+    }
+    //isButtonPressed = False;
+    mainEventFlag &= ~PUSHBUTTON_FLAG;
+  }
+
+  // Go to sleep
   
-  delay(10);
 }
 
 //Uno
@@ -72,6 +87,8 @@ ISR(INT0_vect){
 //Mega
 
 ISR(INT4_vect){
-  isrCounter++;
+    //isButtonPressed = True;
+  mainEventFlag |= PUSHBUTTON_FLAG;
+  
 }
 

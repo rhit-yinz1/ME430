@@ -2,5 +2,5 @@
     "configuration": "cpu=atmega2560",
     "board": "arduino:avr:mega",
     "port": "COM5",
-    "sketch": "FollowAlongs\\External Interrupts\\Polling\\Polling.ino"
+    "sketch": "FollowAlongs\\External Interrupts\\CountTo10WithInterrupt\\CountTo10WithInterrupt.ino"
 }
