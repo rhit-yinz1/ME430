@@ -2,5 +2,5 @@
     "configuration": "cpu=atmega2560",
     "board": "arduino:avr:mega",
     "port": "COM5",
-    "sketch": "Labs\\Lab LED Counter\\LEDCounter\\LEDCounter.ino"
+    "sketch": "FollowAlongs\\TwoTimers\\TwoTimers.ino"
 }
