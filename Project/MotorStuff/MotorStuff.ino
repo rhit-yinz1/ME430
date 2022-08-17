@@ -1,10 +1,11 @@
 // C++ code
 //
+
 void setup() {
   pinMode(2, INPUT_PULLUP);
   pinMode(12, INPUT_PULLUP);
 
-  // Outputs for Dubugging LEDs
+  // Outputs for Motor Dubugging LEDs
   pinMode(3, OUTPUT);
   pinMode(13, OUTPUT);
 

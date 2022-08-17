@@ -17,6 +17,11 @@
             "includePath": [
                 "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino",
                 "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/mega",
+                "/Users/theoy/Documents/Arduino/libraries/Letters_and_Numbers_Seven_Segment_Display_Library",
+                "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src",
+                "/Users/theoy/Documents/Arduino/libraries/Adafruit_TCS34725",
+                "/Users/theoy/Documents/Arduino/libraries/Adafruit_BusIO",
+                "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SPI/src",
                 "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include",
                 "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include-fixed",
                 "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/avr/include"
