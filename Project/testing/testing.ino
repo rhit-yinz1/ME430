@@ -15,7 +15,7 @@
 
 #include "Adafruit_TCS34725.h"  //include the sensor library
 
-#define redpin 3    // pwm output for RED anode use 1K resistor
+#define redpin 4    // pwm output for RED anode use 1K resistor
 #define greenpin 5  // pwm output for GREEN anode use 2K resistor
 #define bluepin 6   // pwm output for BLUE anode use 1K resistor
 
@@ -55,7 +55,7 @@ void setup() {
     } else {
       gammatable[i] = x;
     }
-    // Serial.println(gammatable[i]);
+    Serial.println(gammatable[i]);
   }
 }
 
