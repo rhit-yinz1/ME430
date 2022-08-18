@@ -10,7 +10,7 @@ void setup()
   pinMode(PIN_PUSHBUTTON_PRINT, INPUT_PULLUP);
   pinMode(PIN_PUSHBUTTON_COUNT, INPUT_PULLUP);
   
-  arrachInterrupt(digitalPinToInterrupt(PIN_PUSHBUTTON_PRINT), pushbuttonISR, FALLING);
+  attachInterrupt(digitalPinToInterrupt(PIN_PUSHBUTTON_PRINT), pushbuttonISR, FALLING);
 }
 
 void loop()
