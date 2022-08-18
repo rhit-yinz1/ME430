@@ -10,10 +10,10 @@ SevenSegmentDisplay sc(25, 23, 26, 24, 22, 27, 29, 28, false);
 #define bp 6
 #define gp 5
 #define button 4
-#define Lbutton 2
-#define LLED 3
-#define Rbutton 12
-#define RLED 13
+#define Rbutton 2
+#define RLED 3
+#define Lbutton 12
+#define LLED 13
 #define speed 11
 #define Lspin 10
 #define Rspin 9
