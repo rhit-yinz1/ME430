@@ -122,7 +122,7 @@ void disColor() {
   Serial.print("\n");
   rgb(int(red), int(green), int(blue));
   calcPoint(int(red), int(green), int(blue));
-  // wait for 1s to read again
+  // wait for 1/2s to read again
   delay(500);
 }
 
@@ -145,15 +145,19 @@ void rgb(int r, int g, int b) {
 }
 
 void calcPoint(int r, int g, int b){
-  if(160<r){
+  if(120<r & g<90 & b<90){
     if(score <= 0){
     }else{
         score--;
     }
     updateScore();
   }
-  if(110<g){
-    score++;
+  if (100 < g & r < 90 & b < 90) {
+    
+    if (score >=9) {
+    } else {
+      score++;
+    }
     updateScore();
   }
 }

@@ -1,6 +1,6 @@
 {
     "configuration": "cpu=atmega2560",
     "board": "arduino:avr:mega",
-    "port": "/dev/tty.usbmodem1401",
+    "port": "/dev/tty.usbmodem1101",
     "sketch": "Project/MotorNSensor/MostorNSensor.ino"
 }
