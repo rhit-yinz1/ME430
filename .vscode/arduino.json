@@ -1,6 +1,6 @@
 {
     "configuration": "cpu=atmega2560",
     "board": "arduino:avr:mega",
-    "port": "COM5",
-    "sketch": "Project\\testing\\testing.ino"
+    "port": "/dev/tty.usbmodem2101",
+    "sketch": "Robotics/pirsensor/pirsensor.ino"
 }
